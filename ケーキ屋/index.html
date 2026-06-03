@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poche | 小さなケーキ屋</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Poche ホーム">
+        <span class="brand-name">Poche</span>
+        <span class="brand-kana">ポッシュ</span>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+
+      <label class="hamburger" for="nav-toggle" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="global-nav" aria-label="メインメニュー">
+        <a href="#concept">こだわり</a>
+        <a href="#menu">メニュー</a>
+        <a href="#reservation">ご予約</a>
+        <a href="#access">アクセス</a>
+        <a href="#news">お知らせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="section-inner hero-copy">
+        <h1>しあわせを包む、<br>小さなケーキ屋。</h1>
+        <p>心を込めて焼き上げた、<br>やさしい甘さのケーキと焼き菓子をお届けします。</p>
+      </div>
+    </section>
+
+    <section class="section-title" id="concept">
+      <h2>こだわり</h2>
+    </section>
+
+    <section class="concept">
+      <div class="section-inner concept-copy">
+        <p class="lead">素材のやさしさを、ひとつひとつ丁寧に。</p>
+        <p>Pocheでは<br>北海道産生クリームや<br>国産小麦、新鮮な卵など、<br>素材選びから丁寧にこだわっています。</p>
+        <a class="button filled" href="#concept">詳しく見る</a>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-inner">
+        <h2>メニュー</h2>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <span class="badge">No.1</span>
+            <img src="images/shortcake.png" alt="苺のショートケーキ">
+            <div class="menu-body">
+              <h3>苺のショートケーキ</h3>
+              <p class="price">￥520（税込）</p>
+              <p>ふわふわのスポンジに生クリームと甘酸っぱい苺をたっぷり使用した人気商品</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <span class="badge">No.2</span>
+            <img src="images/montblanc.png" alt="モンブラン">
+            <div class="menu-body">
+              <h3>モンブラン</h3>
+              <p class="price">￥560（税込）</p>
+              <p>濃厚なマロンクリームと軽やかな生クリームを合わせた、上品な味わい</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <span class="badge badge-season">季節限定</span>
+            <img src="images/tart.png" alt="いちごのタルト">
+            <div class="menu-body">
+              <h3>いちごのタルト</h3>
+              <p class="price">￥580（税込）</p>
+              <p>サクサクのタルト生地に旬の苺を贅沢にのせた季節限定のおすすめ商品</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="images/financier.png" alt="フィナンシェ">
+            <div class="menu-body">
+              <h3>フィナンシェ</h3>
+              <p class="price">￥250（税込）</p>
+              <p>焦がしバターの香りが広がる焼き菓子</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="images/gift.png" alt="焼き菓子ギフト">
+            <div class="menu-body">
+              <h3>焼き菓子ギフト</h3>
+              <p class="price">￥1200（税込）〜</p>
+              <p>贈り物にぴったりの焼き菓子の詰め合わせ</p>
+            </div>
+          </article>
+        </div>
+
+        <a class="button filled menu-button" href="#menu">すべてのメニューを見る</a>
+      </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+      <div class="section-inner reservation-copy">
+        <h2>ホールケーキのご予約</h2>
+        <p class="lead">大切な日を、もっと特別に。</p>
+        <p>特別なケーキを丁寧にお作りするため、<br>3日前までのご予約をお願いいたします。</p>
+        <a class="button outline" href="#reservation">ご予約はこちら</a>
+      </div>
+    </section>
+
+    <section class="access-section" id="access">
+      <div class="section-inner">
+        <h2>アクセス</h2>
+
+        <div class="access-box">
+          <div class="address">
+            <p>〒123-4567<br>東京都世田谷区桜新町1-2-3</p>
+            <p>桜新町駅より徒歩5分</p>
+            <a class="button outline small" href="https://www.google.com/maps" target="_blank" rel="noreferrer">Google Mapで見る</a>
+          </div>
+
+          <div class="map" aria-label="店舗周辺の地図イメージ">
+            <span class="park"></span>
+            <span class="route route-a"></span>
+            <span class="route route-b"></span>
+            <span class="route route-c"></span>
+            <span class="pin"></span>
+            <span class="map-label">Poche</span>
+          </div>
+
+          <div class="hours">
+            <p>営業時間<br><strong>10:00〜19:00</strong></p>
+            <p>定休日：水曜日</p>
+            <p>（祝日の場合は営業、翌日休み）</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="news">
+    <div class="section-inner footer-grid">
+      <div class="brand footer-brand">
+        <span class="brand-name">Poche</span>
+        <span class="brand-kana">ポッシュ</span>
+      </div>
+
+      <div>
+        <h2>こだわり</h2>
+        <a href="#concept">素材について</a>
+        <a href="#concept">製法について</a>
+      </div>
+
+      <div>
+        <h2>メニュー</h2>
+        <a href="#menu">ケーキ</a>
+        <a href="#menu">焼き菓子</a>
+        <a href="#menu">ギフト</a>
+      </div>
+
+      <div>
+        <h2>ご予約</h2>
+        <a href="#reservation">ホールケーキ予約</a>
+        <a href="#reservation">ギフト注文</a>
+      </div>
+
+      <div>
+        <h2>お知らせ</h2>
+        <a href="#news">新着情報</a>
+        <a href="#news">イベント情報</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
