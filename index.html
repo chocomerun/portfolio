@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karen Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -22,8 +23,8 @@
       <p class="vertical-copy">© 2026 Karen portfolio</p>
       <div class="hero-content">
         <p class="section-kicker">PORTFOLIO</p>
-        <h1>Code<br>with<br>purpose.</h1>
-        <p class="hero-lead">学びを積み重ね、使いやすいWebをつくるエンジニアへ。</p>
+        <h1>伝わるデザインを、丁寧に</h1>
+        <p class="hero-lead">ユーザー目線を大切にし、目的や情報がわかりやすく伝わる<br>Webデザインを制作します。</p>
         <a class="outline-button" href="#works">
           VIEW WORKS
           <span aria-hidden="true">→</span>
@@ -44,10 +45,6 @@
          毎日学習時間を確保し、デザイン制作やコーディング練習を継続しています。
          課題に対して粘り強く取り組み、改善を繰り返しながら成長できることが強みです。
         </p>
-        <a class="outline-button" href="#contact">
-          MORE ABOUT ME
-          <span aria-hidden="true">→</span>
-        </a>
       </div>
     </section>
 
@@ -57,22 +54,26 @@
           <p class="section-kicker with-line">WORKS</p>
           <h2>制作実績</h2>
         </div>
-        <a class="text-link" href="#works">VIEW ALL WORKS <span aria-hidden="true">→</span></a>
+
+        <div class="work-controls" aria-label="Works slider controls">
+          <button class="work-control work-control-prev" type="button" aria-label="Previous work">
+            <span aria-hidden="true">&lsaquo;</span>
+          </button>
+          <button class="work-control work-control-next" type="button" aria-label="Next work">
+            <span aria-hidden="true">&rsaquo;</span>
+          </button>
+        </div>
       </div>
 
-      <div class="work-grid">
-        <article class="work-card beauty">
-          <div class="work-visual">
-            <span class="tag">Website</span>
-            <strong>透明感のある<br>うるツヤ肌へ</strong>
-            <small>¥2,980 / trial</small>
-          </div>
-          <h3>バナー制作（美容クリニック）</h3>
-          <p>Banner Design</p>
-        </article>
+      <div class="works-category">
+        <p class="category-label">Web Site</p>
+        <h3>Webサイト制作</h3>
+      </div>
 
+      <div class="work-grid" tabindex="0" aria-label="Works slider">
+      
         <article class="work-card bloom-note">
-          <a class="work-link" href="create%20HP/index.html#" target="_blank" rel="noopener">
+          <a class="work-link" href="../create%20HP/index.html#" target="_blank" rel="noopener">
             <div class="work-visual screenshot-visual">
               <img src="images/flower.PNG" alt="Bloom Noteトップページのスクリーンショット">
             </div>
@@ -82,7 +83,7 @@
         </article>
 
         <article class="work-card poche">
-          <a class="work-link" href="ケーキ屋/index.html" target="_blank" rel="noopener">
+          <a class="work-link" href="../ケーキ屋/index.html" target="_blank" rel="noopener">
             <div class="work-visual screenshot-visual">
               <img src="images/ケーキ屋.PNG" alt="Poche 小さなケーキ屋トップページのスクリーンショット">
             </div>
@@ -92,7 +93,7 @@
         </article>
 
         <article class="work-card lumia">
-          <a class="work-link" href="美容室HP/index.html#menu" target="_blank" rel="noopener">
+          <a class="work-link" href="../美容室HP/index.html#menu" target="_blank" rel="noopener">
             <div class="work-visual screenshot-visual">
               <img src="images/美容室.PNG" alt="LUMIA hair salonトップページのスクリーンショット">
             </div>
@@ -101,34 +102,95 @@
           </a>
         </article>
 
-        <article class="work-card cafe">
-          <div class="work-visual">
-            <span class="tag">Website</span>
-            <strong>日常に、<br>小さなご褒美を。</strong>
-            <small>Specialty Coffee Shop</small>
-          </div>
-          <h3>Webサイト制作（カフェサイト）</h3>
-          <p>Web Design</p>
+        <article class="work-card yunagi">
+          <a class="work-link" href="../酒場%20夕凪/index.html" target="_blank" rel="noopener">
+            <div class="work-visual screenshot-visual">
+              <img src="images/sakaba-yunagi.png" alt="酒場 夕凪トップページのスクリーンショット">
+            </div>
+            <h3>酒場 夕凪</h3>
+            <p>Web Design / HTML / CSS</p>
+          </a>
         </article>
 
-        <article class="work-card campaign">
-          <div class="work-visual">
-            <span class="tag">Campaign</span>
-            <strong>5日間限定<br><span>20%OFF</span></strong>
-            <small>LUXE BEAUTY</small>
+        <article class="work-card hidamari-fit">
+          <a class="work-link" href="../スポーツ/index.html#features" target="_blank" rel="noopener">
+            <div class="work-visual screenshot-visual">
+              <img src="images/hidamari-fit.png" alt="ひだまりフィットトップページのスクリーンショット">
+            </div>
+            <h3>ひだまりフィット</h3>
+            <p>Web Design / HTML / CSS</p>
+          </a>
+        </article>
+      </div>
+
+      <div class="works-category banner-category">
+        <p class="category-label">Banner</p>
+        <h3>バナー制作</h3>
+        <div class="work-controls banner-controls" aria-label="Banner slider controls">
+          <button class="work-control banner-control-prev" type="button" aria-label="Previous banner">
+            <span aria-hidden="true">&lsaquo;</span>
+          </button>
+          <button class="work-control banner-control-next" type="button" aria-label="Next banner">
+            <span aria-hidden="true">&rsaquo;</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="banner-grid" tabindex="0" aria-label="Banner works slider">
+        <article class="banner-card">
+          <div class="banner-visual">
+            <img src="images/banner-furniture.png" alt="家具屋セールバナー">
           </div>
-          <h3>バナー制作（キャンペーン）</h3>
+          <h3>家具屋セールバナー</h3>
           <p>Banner Design</p>
         </article>
 
-        <article class="work-card interior">
-          <div class="work-visual">
-            <span class="tag">Website</span>
-            <strong>心地よい空間で、<br>自分らしい暮らしを。</strong>
-            <small>Comfort Interior</small>
+        <article class="banner-card">
+          <div class="banner-visual">
+            <img src="images/banner-rakuten-mobile.png" alt="楽天モバイルキャンペーンバナー">
           </div>
-          <h3>Webサイト制作（インテリア）</h3>
-          <p>Web Design</p>
+          <h3>楽天モバイルキャンペーン</h3>
+          <p>Banner Design</p>
+        </article>
+
+        <article class="banner-card">
+          <div class="banner-visual">
+            <img src="images/banner-online-school.png" alt="オンラインスクール無料体験バナー">
+          </div>
+          <h3>オンラインスクール</h3>
+          <p>Banner Design</p>
+        </article>
+
+        <article class="banner-card">
+          <div class="banner-visual">
+            <img src="images/banner-summer-sale.png" alt="サマーセールバナー">
+          </div>
+          <h3>サマーセール</h3>
+          <p>Banner Design</p>
+        </article>
+
+        <article class="banner-card">
+          <div class="banner-visual">
+            <img src="images/banner-travel.png" alt="沖縄旅行キャンペーンバナー">
+          </div>
+          <h3>旅行会社キャンペーン</h3>
+          <p>Banner Design</p>
+        </article>
+
+        <article class="banner-card square-banner">
+          <div class="banner-visual">
+            <img src="images/banner-new-product.png" alt="いちごミルクラテ新商品バナー">
+          </div>
+          <h3>新商品バナー</h3>
+          <p>Banner Design</p>
+        </article>
+
+        <article class="banner-card">
+          <div class="banner-visual">
+            <img src="images/banner-diet.png" alt="ダイエット食品バナー">
+          </div>
+          <h3>ダイエット食品バナー</h3>
+          <p>Banner Design</p>
         </article>
       </div>
     </section>
